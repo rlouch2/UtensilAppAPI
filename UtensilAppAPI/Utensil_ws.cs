@@ -183,7 +183,7 @@ namespace UtensilAppAPI
 			req.ContentType = "application/json";
 			req.Accept = "application/json";
 
-			if (method != HttpMethod.Get)
+			if (postJSON != "")
 			{
 				byte[] byteArray = Encoding.UTF8.GetBytes(postJSON);
 				req.ContentLength = byteArray.Length;
