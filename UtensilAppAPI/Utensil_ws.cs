@@ -182,6 +182,7 @@ namespace UtensilAppAPI
 
 			req.ContentType = "application/json";
 			req.Accept = "application/json";
+			req.Method = method.ToString();
 
 			if (postJSON != "")
 			{
